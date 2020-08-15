@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+  
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyBZ_rJyB9I3-GM0-YvnNaC7bbqWwe9aNTg",
+      authDomain: "todo-app-7b790.firebaseapp.com",
+      databaseURL: "https://todo-app-7b790.firebaseio.com",
+      projectId: "todo-app-7b790",
+      storageBucket: "todo-app-7b790.appspot.com",
+      messagingSenderId: "610783655586",
+      appId: "1:610783655586:web:88b1e514d6353b52e709fb",
+      measurementId: "G-Q7GTVH8FQV"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+
+<div class="ffd">
+    <center>
+
+    <div class="main">
+        <input placeholder="ENTER TODO" type="text" id="todo-item">
+        <button onclick="addTodo()"><i id="icon1" class="fa fa-plus"></i></button>
+        <button onclick=" deleteAll()"><i id="icon2" class="fa fa-trash"></i></button>
+    </div>
+</center>
+
+        <div>
+        <ul id="list">
+
+        </ul>
+    </div>
+</div>
+
+</body>
+<script src="app.js"></script>
+
+</html>
